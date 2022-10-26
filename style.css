@@ -1,0 +1,146 @@
+/* desktop view */
+
+.panel {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7E4D4;
+}
+
+.title h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 48px;
+    color: #467745;
+    font-weight: normal;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 520px) {
+    .title {
+        justify-content: flex-start !important;
+    }
+
+    .title h1 {
+        font-size: 36px;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+
+}
+
+.topic {
+    font-size: 16px;
+    max-width: 480px;
+    height: 64px;
+    padding: 20px;
+    width: 480px;
+
+}
+
+@media only screen and (max-width: 520px) {
+    .topic {
+        width: calc(100% - 40px);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .panel {
+        width: calc(100% - 40px);
+    }
+}
+
+.textbox {
+
+    max-width: 480px;
+    height: 120px;
+    padding: 20px;
+    width: 480px;
+}
+
+.textbox textarea {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+    width: 100%;
+    height: 120px;
+    border: none;
+    padding: 10px;
+    resize: none;
+
+}
+
+@media only screen and (max-width: 520px) {
+    .textbox {
+        width: calc(100% - 40px);
+    }
+}
+
+.topic input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    height: 64px;
+    color: #467745;
+    border: none;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.button-element button {
+    font-family: 'EB Garamond', serif;
+    font-size: 21px;
+    max-width: 280px;
+    width: 280px;
+    height: 80px;
+    background-color: #467745;
+    color: #F7E4D4;
+    letter-spacing: 0.2em;
+    border: none;
+    border-radius: 50px;
+    margin: 25px;
+
+}
+
+
+
+.agree-button {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #467745;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.agree-button input {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    appearance: none;
+}
